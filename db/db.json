@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": " Vietnamo",
+      "pic": "pic1.jpg",
+      "image": "menu-1.png",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...",
+      "price": 17.99
+    },
+    {
+      "id": 2,
+      "name": "NVDong",
+      "pic": "pic2.jpg",
+      "image": "menu-2.png",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...",
+      "price": 15.99
+    },
+    {
+      "id": 3,
+      "name": "Cappuchino",
+      "pic": "pic3.jpg",
+      "image": "menu-3.png",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...",
+      "price": 14
+    },
+    {
+      "id": 4,
+      "name": "Caramel",
+      "pic": "pic4.jpg",
+      "image": "menu-4.png",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...",
+      "price": 20.99
+    },
+    {
+      "id": 5,
+      "name": "Phin Sữa",
+      "pic": "pic5.jpg",
+      "image": "menu-5.png",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...",
+      "price": 17.99
+    },
+    {
+      "id": 6,
+      "name": "chocolate",
+      "pic": "pic6.jpg",
+      "image": "menu-6.png",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...",
+      "price": 21.99
+    },
+    {
+      "id": 7,
+      "name": "Latte Latte",
+      "pic": "product-1.png",
+      "image": "product-1.png",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...",
+      "price": 16.99
+    },
+    {
+      "id": 8,
+      "name": "Caramen Chảy",
+      "pic": "product-2.png",
+      "image": "product-2.png",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...",
+      "price": 23.99
+    },
+    {
+      "id": 9,
+      "name": "Phin Bọt Biển",
+      "pic": "product-3.png",
+      "image": "product-3.png",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...",
+      "price": 15.99
+    }
+  ]
+}
