@@ -1,0 +1,90 @@
+.login-contain {
+  background: #fff;
+  left: 50%;
+  top: 25%;
+  width: 520px;
+  z-index: 20;
+  border-radius: 10px;
+  position: fixed;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+}
+.top-side {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.top-side .icon {
+  height: 60px;
+  width: 60px;
+  margin: 10px 120px;
+}
+.top-side .back {
+  height: 40px;
+  width: 80px;
+  margin: 20px 15px;
+}
+.login-contain h1 {
+  margin: 0 auto;
+}
+.login-contain h5 {
+  margin: 0 auto;
+}
+.login-contain p {
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: larger;
+  font-family: monospace;
+}
+.login-overlay {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.547);
+}
+.login-opt {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.login-opt button {
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 10px 70px;
+}
+.login-opt .gg {
+  border: 2px solid rgba(255, 0, 0, 0.476);
+  background-color: #fff;
+  font-size: 24;
+  font-weight: bold;
+}
+.login-opt .gg:hover {
+  background-color: rgba(255, 0, 0, 0.639);
+  color: white;
+  font-size: 24;
+  font-weight: bold;
+  border: 2px solid whitesmoke;
+}
+
+.login-opt .fb {
+  border: 2px solid rgba(0, 0, 255, 0.451);
+  background-color: #fff;
+  font-size: 24;
+  font-weight: bold;
+}
+.login-opt .fb:hover {
+  background-color: rgba(0, 0, 255, 0.451);
+  color: white;
+  font-size: 24;
+  font-weight: bold;
+  border: 2px solid whitesmoke;
+}
+
+.login-opt img {
+  width: 50px;
+}

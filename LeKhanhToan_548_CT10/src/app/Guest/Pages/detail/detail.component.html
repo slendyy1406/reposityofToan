@@ -1,0 +1,13 @@
+<div class="container bg mt-4">
+    <div class="detail-contain" >
+        <img [src]="'./assets/images/' + product?.image" alt="">
+        <div class="detail">
+            <h1>{{product?.name}}</h1>
+            <p> {{product?.description}}</p>
+            <h4>Price: ${{product?.price}}</h4>
+            <div>
+                <button (click)="handleAddProd(product)" class="btn btn-danger">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+</div>

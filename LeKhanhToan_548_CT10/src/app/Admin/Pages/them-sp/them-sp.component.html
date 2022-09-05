@@ -1,0 +1,21 @@
+<div class="container">
+    <form class="form-group" #form="ngForm" (submit)="handleSubmit(form)">
+        <Label class="mt-3">Tên sản phẩm:</Label>
+        <input class="form-control" type="text" [(ngModel)]="product.name" name="name">
+
+        <Label  class="mt-3">Loại:</Label>
+        <input class="form-control"  type="text" [(ngModel)]="product.type" name="type">
+        
+
+        <Label  class="mt-3">Giá:</Label>
+        <input class="form-control"  type="number" [(ngModel)]="product.price" name="price">
+
+        <Label class="mt-3">Mô tả:</Label>
+        <input class="form-control"   type="text" [(ngModel)]="product.description" name="description">
+
+        <Label class="mt-3">Ảnh sản phẩm:</Label>
+        <input class="form-control"  type="text" [(ngModel)]="product.image" name="image">
+
+        <button class="btn btn-primary mt-3">Thêm</button>
+    </form>
+</div>

@@ -1,0 +1,49 @@
+.cart-bg {
+  background: #fff;
+  right: 0;
+  top: 0;
+  width: 750px;
+  height: 100vh;
+  z-index: 50;
+  position: fixed;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  transition: 0.5s;
+}
+.overlay-bg {
+  position: fixed;
+  z-index: 40;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.547);
+}
+.top {
+  display: flex;
+}
+.top h2 {
+  margin: 10px auto;
+}
+.return {
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 60px;
+  margin: 10px 20px;
+}
+.bodycart {
+  margin-left: 50px;
+}
+thead tr {
+  padding: 0 30px;
+}
+tbody img {
+  width: 180px;
+}
+tbody tr td {
+  font-size: 20px;
+  font-weight: bold;
+}

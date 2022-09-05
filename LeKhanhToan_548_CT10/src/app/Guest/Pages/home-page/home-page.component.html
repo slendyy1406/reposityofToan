@@ -1,0 +1,52 @@
+<div class="carouselcontain">
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide><img src="./assets/images/carou1.png" alt=""></ng-template>  
+        <ng-template carouselSlide><img src="./assets/images/carou2.png" alt=""></ng-template>  
+        <ng-template carouselSlide><img src="./assets/images/carou3.png" alt=""></ng-template>
+        <ng-template carouselSlide><img src="./assets/images/carou4.png" alt=""></ng-template>  
+        <ng-template carouselSlide><img src="./assets/images/carou5.png" alt=""></ng-template>  
+        <ng-template carouselSlide><img src="./assets/images/carou6.png" alt=""></ng-template>  
+        <ng-template carouselSlide><img src="./assets/images/carou7.png" alt=""></ng-template>
+        <ng-template carouselSlide><img src="./assets/images/carou8.png" alt=""></ng-template>  
+        <ng-template carouselSlide><img src="./assets/images/carou9.png" alt=""></ng-template>  
+        <ng-template carouselSlide><img src="./assets/images/carou10.png" alt=""></ng-template>  
+        <ng-template carouselSlide><img src="./assets/images/carou11.png" alt=""></ng-template>
+      </owl-carousel-o>
+ </div>
+<div class="container">
+    <div class="product mt-3">
+        <div class="list">
+            <img src="./assets/images/school-bag.png" alt="">
+            <Label>Backpacks</Label>
+        </div>
+        <div class="list">
+            <img src="./assets/images/wallet.png" alt="">
+            <Label>Backpacks</Label>
+        </div>
+        <div class="list">
+            <img src="./assets/images/phone-case.png" alt="">
+            <Label>Backpacks</Label>
+        </div>
+        <div class="list">
+            <img src="./assets/images/handbag.png" alt="">
+            <Label>Backpacks</Label>
+        </div>
+    </div> 
+</div>
+<div class=" container Sort">
+    <h2>Sắp xếp:</h2>
+    <button (click)="sortType='id'" class="btn btn-outline-primary">ID</button>
+    <button (click)="sortType='name'" class="btn btn-outline-danger">Tên</button>
+    <button (click)="sortType='price'" class="btn btn-outline-warning">Giá</button>
+    <button (click)="sortType='type'" class="btn btn-outline-dark">Loại</button>
+</div>
+<div class="cotainer-fluid show">
+    <div class="card" *ngFor="let product of products | sort : sortType">
+        <a  [routerLink]="['/guest/detail', product.id]" class="card-body">
+            <img [src]="'./assets/images/'+ product.image" alt="">
+            <div class="nameofProd">{{product.name}}</div>
+            <div class="priceofProd">${{product.price}}</div>
+        </a>
+        <button (click)="handleAddProd(product)" class="btn btn-outline-danger mua">MUA</button>
+    </div>
+</div>

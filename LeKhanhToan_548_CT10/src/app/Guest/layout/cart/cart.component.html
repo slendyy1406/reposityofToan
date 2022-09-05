@@ -1,0 +1,39 @@
+<div class="cart-bg" [style.right]="open ? '0' : '-100%'">
+    <div class="top">
+        <button class="btn btn-outline-dark return" (click)="close.emit()">Back</button>
+        <h2>YOUR CART</h2>
+    </div>
+    <hr>
+    <table class="bodycart table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Images</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let prod of cart">
+                <td>{{prod.name}}</td>
+                <td><img [src]="'./assets/images/'+prod.image"></td>
+                <td>{{prod.quantity}}</td>
+                <td>${{prod.price}}</td>
+                <th>
+                    <button (click)="handleDelete(prod.id!)" class="btn btn-outline-danger">Xóa</button>
+                </th>
+            </tr>
+        </tbody>
+        <tr>
+            <th>Total</th>
+            <th></th>
+            <th></th>
+            <th>${{total}}</th>
+            <th>
+                <button class="btn btn-outline-success" (click)="handlePurchases()">Đặt hàng</button>
+            </th>
+        </tr>
+    </table>
+</div>
+<div class="overlay-bg" *ngIf="open" (click)="close.emit()"></div>

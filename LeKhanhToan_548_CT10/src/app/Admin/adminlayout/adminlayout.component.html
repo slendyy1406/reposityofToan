@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light menu-admin-navbar">
+    
+
+      <div class="collapse navbar-collapse menu" >
+        <ul class="navbar-nav mb-2 mb-lg-0 justify-self-end">
+          
+          <li class="nav-item">
+            <a [routerLink]="['sanpham']" class="nav-link" >QUẢN LÝ SẢN PHẨM</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['donhang']" class="nav-link" >QUẢN LÝ ĐƠN HÀNG</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['themsp']" class="nav-link" >THÊM SẢN PHẨM</a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/guest']" class="nav-link" >HOME-PAGE</a>
+          </li>
+        </ul>
+        <button class="admin-user" *ngIf="user === null; else adminTemplate" (click)="isShowOpen = true;"><img  src="./assets/images/user.png"></button>
+
+   
+          <ng-template #adminTemplate>
+            <div class="adminpro5" (click)="usertoggle = !usertoggle">
+              <img [src]="user?.photoUrl ? user?.photoUrl : './assets/images/user.png'" alt="">
+            </div>
+          
+            <div  class="adminuser" *ngIf="usertoggle">
+              <h3>Admin: {{user?.displayName}}</h3>
+              <h4>{{user?.email}}</h4>
+              <button class="btn btn-outline-danger" (click)="handleSignOut()">Logout</button>
+            </div>
+  
+            <div class="adminoverlay" *ngIf="usertoggle" (click)="usertoggle = false"></div>
+          </ng-template>
+          
+     
+
+      </div>
+    
+  </nav>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>

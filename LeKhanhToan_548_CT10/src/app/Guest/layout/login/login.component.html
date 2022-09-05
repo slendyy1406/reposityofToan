@@ -1,0 +1,17 @@
+<div class="login-contain"*ngIf="show" >
+    <div class="top-side">
+        <button class="btn btn-outline-dark back" (click)="close.emit()">Return</button>
+        <img class="icon" src="./assets/images/user.png" alt="">
+    </div>
+    <h1>ĐĂNG NHẬP</h1>
+    <h5>Tham gia với chúng tôi qua:</h5>
+
+    <div class="login-opt">
+        <button class="gg" (click)="handleSighIn()"><img src="./assets/images/google.png" alt=""> Tài khoản Google</button>
+        <button class="fb"><img src="./assets/images/facebook.png" alt=""> Tài khoản Facebook</button>
+    </div> 
+    <p>enjoy :)</p>
+</div>
+<div class="login-overlay" *ngIf="show" (click)="close.emit()">
+    
+</div>
